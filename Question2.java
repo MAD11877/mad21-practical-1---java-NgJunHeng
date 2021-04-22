@@ -1,4 +1,5 @@
-import java.util.Scanner;
+  import java.util.Scanner;
+  import java.text.DecimalFormat;
 
 public class Question2
 {
@@ -10,7 +11,17 @@ public class Question2
      * Hint: in.nextDouble() to read double
      */
      
+    
+    // System.out.println("Input height in meters");
     Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
+    double height1 = in.nextDouble();
+
+    //  System.out.println("Input weight in kilograms");
+    double weight1 = in.nextDouble();
+
+    DecimalFormat df = new DecimalFormat("#.#");
+    double bmi = weight1 / (height1*height1);
+
+    System.out.println(df.format(bmi));
   }
 }

@@ -12,10 +12,10 @@ public class Question3
      
      System.out.println("Enter a number: ");
     Scanner in = new Scanner(System.in);
-    int num = in.nextInt();
-    int total = num * num ;
+    int num1 = in.nextInt();
+    int total1 = num1 * num1 ;
 
-    System.out.println(num + " x " + num + " is " + total);
+    System.out.println(num1 + " x " + num1 + " is " + total1);
 
 
     

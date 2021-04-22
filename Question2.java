@@ -11,13 +11,15 @@ public class Question2
      */
      
     
-    System.out.println("Input height in meters");
+    // System.out.println("Input height in meters");
     Scanner in = new Scanner(System.in);
     double height1 = in.nextDouble();
 
-     System.out.println("Input weight in kilograms");
+    //  System.out.println("Input weight in kilograms");
     double weight1 = in.nextDouble();
 
-    System.out.println("BMI = " + weight1 / (height1 * height1));
+    double bmi = Math.round(weight1 / (height1*height1));
+
+    System.out.println(bmi);
   }
 }

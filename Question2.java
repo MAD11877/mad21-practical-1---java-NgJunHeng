@@ -1,4 +1,5 @@
-import java.util.Scanner;
+  import java.util.Scanner;
+  import java.text.DecimalFormat;
 
 public class Question2
 {
@@ -18,8 +19,9 @@ public class Question2
     //  System.out.println("Input weight in kilograms");
     double weight1 = in.nextDouble();
 
-    double bmi = Math.round(weight1 / (height1*height1));
+    DecimalFormat df = new DecimalFormat("#.#");
+    double bmi = weight1 / (height1*height1);
 
-    System.out.println(bmi);
+    System.out.println(df.format(bmi));
   }
 }

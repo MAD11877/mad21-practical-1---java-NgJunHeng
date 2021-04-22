@@ -10,7 +10,14 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
+     System.out.println("Enter a number: ");
     Scanner in = new Scanner(System.in);
+    int num = in.nextInt();
+    int total = num * num ;
+
+    System.out.println(num + " x " + num + " is " + total);
+
+
     
   }
 }
